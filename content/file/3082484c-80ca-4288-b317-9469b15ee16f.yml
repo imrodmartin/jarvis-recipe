@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3082484c-80ca-4288-b317-9469b15ee16f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bg-sweeping-curves-blue.jpg
+  uri:
+    -
+      value: 'public://2026-07/bg-sweeping-curves-blue.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 144962
+  status:
+    -
+      value: true

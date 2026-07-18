@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7f1a2fa5-02a9-4701-8e62-ce955f10a29c
+  bundle: jarvis_image
+  default_langcode: en
+  depends:
+    4b520ee4-5296-483b-aea4-99dd57716ba1: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: jarvis-banner-4.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Jarvis website builder landing page with UI mockup and blue “Live Demo” button'
+      title: ''
+      width: 1536
+      height: 1024
+      entity: 4b520ee4-5296-483b-aea4-99dd57716ba1

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: cb024184-dd25-4929-acc4-e025132142aa
+  bundle: jarvis_image
+  default_langcode: en
+  depends:
+    1c204e6b-fa01-4a7e-b7d2-ee158340b82d: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: jarvis-banner-1.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Jarvis logo and headline “Build better digital experiences with Drupal” beside laptop on desk'
+      title: ''
+      width: 1774
+      height: 887
+      entity: 1c204e6b-fa01-4a7e-b7d2-ee158340b82d

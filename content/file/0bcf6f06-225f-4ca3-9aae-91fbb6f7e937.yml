@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0bcf6f06-225f-4ca3-9aae-91fbb6f7e937
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bg-sweeping-violet.jpg
+  uri:
+    -
+      value: 'public://2026-07/bg-sweeping-violet.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 152790
+  status:
+    -
+      value: true

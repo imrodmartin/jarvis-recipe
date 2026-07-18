@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1b2193be-43ca-4f8d-b616-53268c8b1afb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sweeping-curves-padding.png
+  uri:
+    -
+      value: 'public://2026-07/sweeping-curves-padding.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1484036
+  status:
+    -
+      value: true

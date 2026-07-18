@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a2f49553-ead4-4a7b-a628-85d18cc1c6e1
+  bundle: jarvis_image
+  default_langcode: en
+  depends:
+    3082484c-80ca-4288-b317-9469b15ee16f: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bg-sweeping-curves-blue.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Abstract blue wave background with soft gradient and light glow'
+      title: ''
+      width: 1672
+      height: 941
+      entity: 3082484c-80ca-4288-b317-9469b15ee16f

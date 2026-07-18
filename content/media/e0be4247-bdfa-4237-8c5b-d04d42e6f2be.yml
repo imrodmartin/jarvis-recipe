@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e0be4247-bdfa-4237-8c5b-d04d42e6f2be
+  bundle: jarvis_image
+  default_langcode: en
+  depends:
+    0bcf6f06-225f-4ca3-9aae-91fbb6f7e937: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bg-sweeping-violet.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Abstract graphic of flowing purple waves on a white background'
+      title: ''
+      width: 1536
+      height: 1024
+      entity: 0bcf6f06-225f-4ca3-9aae-91fbb6f7e937

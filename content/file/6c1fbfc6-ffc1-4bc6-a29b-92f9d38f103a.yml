@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6c1fbfc6-ffc1-4bc6-a29b-92f9d38f103a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sweeping-curves-blue.png
+  uri:
+    -
+      value: 'public://2026-07/sweeping-curves-blue.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1179160
+  status:
+    -
+      value: true

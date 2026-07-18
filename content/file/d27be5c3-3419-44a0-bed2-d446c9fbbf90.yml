@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d27be5c3-3419-44a0-bed2-d446c9fbbf90
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bg-green-sweeping.jpg
+  uri:
+    -
+      value: 'public://2026-07/bg-green-sweeping.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 137194
+  status:
+    -
+      value: true

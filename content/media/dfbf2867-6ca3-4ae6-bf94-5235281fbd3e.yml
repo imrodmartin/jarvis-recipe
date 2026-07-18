@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: dfbf2867-6ca3-4ae6-bf94-5235281fbd3e
+  bundle: jarvis_image
+  default_langcode: en
+  depends:
+    d32c7111-a816-4223-b3c5-32e6f010c7ab: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bg-sweeping-curves-padding.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Abstract light blue wave graphic on a white background'
+      title: ''
+      width: 1536
+      height: 1024
+      entity: d32c7111-a816-4223-b3c5-32e6f010c7ab

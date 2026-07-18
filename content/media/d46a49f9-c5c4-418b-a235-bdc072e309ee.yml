@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d46a49f9-c5c4-418b-a235-bdc072e309ee
+  bundle: jarvis_image
+  default_langcode: en
+  depends:
+    c4aced91-90bc-4205-a978-6ede6027f950: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: ai_generated_image_6a510bc8152a8.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Woman at desk using laptop'
+      title: ''
+      width: 1536
+      height: 1024
+      entity: c4aced91-90bc-4205-a978-6ede6027f950

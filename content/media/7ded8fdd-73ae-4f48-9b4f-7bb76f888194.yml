@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7ded8fdd-73ae-4f48-9b4f-7bb76f888194
+  bundle: jarvis_image
+  default_langcode: en
+  depends:
+    b0f9c85c-0252-4054-8865-d0bff9f25cac: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: blue-green-grandient.png
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Blue-to-white gradient background with soft diagonal light streak'
+      title: ''
+      width: 1672
+      height: 941
+      entity: b0f9c85c-0252-4054-8865-d0bff9f25cac
