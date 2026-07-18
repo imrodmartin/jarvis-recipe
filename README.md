@@ -61,7 +61,7 @@ cd mysite
 # (already cloned without submodules? run: git submodule update --init)
 ddev start          # .ddev/config.yaml ships in the repo; project name = directory name
 ddev composer install
-ddev drush site:install minimal -y
+ddev drush site:install
 # NOTE: under ddev, drush's working dir is the docroot (web/), but recipes/ lives
 # at the project root — pass the absolute in-container path:
 ddev drush recipe /var/www/html/recipes/jarvis
