@@ -41,7 +41,8 @@ pages) renders. See the repository-root README for the quick start.
   1 landing demo), **2 Canvas pages** (the component showcase and a Test
   Page), 7 block_content entities, the referenced media + files, and the
   main-menu links. Node URL aliases are carried inline, so they attach
-  regardless of imported node IDs. The front page is set to `/home`.
+  regardless of imported node IDs. The front page is the Canvas component
+  showcase (`/page/2`).
 
 Every module is required in the project `composer.json`, so `composer install`
 downloads them; the recipe enables + configures.
@@ -61,7 +62,7 @@ cd mysite
 # (already cloned without submodules? run: git submodule update --init)
 ddev start          # .ddev/config.yaml ships in the repo; project name = directory name
 ddev composer install
-ddev drush site:install
+ddev drush site:install minimal -y
 # NOTE: under ddev, drush's working dir is the docroot (web/), but recipes/ lives
 # at the project root — pass the absolute in-container path:
 ddev drush recipe /var/www/html/recipes/jarvis
@@ -79,8 +80,8 @@ Without ddev (drush run from the project root), the path is just `recipes/jarvis
 > (`media.field_media_image`, `block_content.body`) are byte-identical with the
 > standard profile's, so they pass the recipe's strict check. Note that applying
 > to an existing site is still an opinionated takeover: it sets the default
-> theme to Jarvis, the admin theme to Claro, the front page to the demo `/home`,
-> and imports the demo content alongside your own.
+> theme to Jarvis, the admin theme to Claro, the front page to the demo Canvas
+> page (`/page/2`), and imports the demo content alongside your own.
 
 ## AI keys (optional, private)
 
