@@ -1,23 +1,28 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.media.jarvis_image.field_media_image
-    - image.style.canvas_parametrized_width
-    - media.type.jarvis_image
   module:
-    - file
     - link
-    - media
-    - media_library
     - options
   theme:
     - jarvis
-active_version: d18df0aa7e647dd8
+active_version: 549c224aeb53f562
 versioned_properties:
   active:
     settings:
       prop_field_definitions:
+        eyebrow:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Who we are'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
         heading:
           required: true
           field_type: string
@@ -26,7 +31,7 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'Build faster with Jarvis'
+              value: 'Large Heading for the CTA.'
           expression: ℹ︎string␟value
           derived_schema_metadata:
             string_shape: {  }
@@ -40,7 +45,7 @@ versioned_properties:
           default_value: null
           expression: ℹ︎list_string␟value
           derived_schema_metadata: {  }
-        subheading:
+        text:
           required: false
           field_type: string
           field_storage_settings: {  }
@@ -48,11 +53,21 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'A component-driven Drupal theme for Canvas and Layout Builder.'
+              value: 'This is a lead paragraph that introduces the call to action. It should be short and compelling.'
           expression: ℹ︎string␟value
           derived_schema_metadata:
             string_shape: {  }
-        cta_text:
+        row1_icon:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        row1_text:
           required: false
           field_type: string
           field_storage_settings: {  }
@@ -60,11 +75,67 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'Get started'
+              value: 'We love the Jarvis theme'
           expression: ℹ︎string␟value
           derived_schema_metadata:
             string_shape: {  }
-        cta_href:
+        row2_icon:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        row2_text:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'The way it makes the site look is amazing.'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        row3_icon:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        row3_text:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'This is really awesome'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        button_text:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'How it works'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        button_href:
           required: false
           field_type: link
           field_storage_settings: {  }
@@ -80,57 +151,34 @@ versioned_properties:
           derived_schema_metadata:
             string_shape:
               format: uri-reference
-        image:
+        link_text:
           required: false
-          field_type: entity_reference
-          field_storage_settings:
-            target_type: media
-          field_instance_settings:
-            handler: 'default:media'
-            handler_settings:
-              target_bundles:
-                jarvis_image: jarvis_image
-          field_widget: media_library_widget
-          default_value: {  }
-          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:jarvis_image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
-          derived_schema_metadata: {  }
-        overlay:
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Meet Our Team'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        link_href:
           required: false
-          field_type: integer
+          field_type: link
           field_storage_settings: {  }
           field_instance_settings:
-            min: 0
-            max: 100
-          field_widget: number
+            title: 0
+            link_type: 17
+          field_widget: link_default
           default_value:
             -
-              value: 40
-          expression: ℹ︎integer␟value
-          derived_schema_metadata: {  }
-        align:
-          required: false
-          field_type: list_string
-          field_storage_settings:
-            allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
-          field_widget: options_select
-          default_value:
-            -
-              value: center
-          expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
-        text_color:
-          required: false
-          field_type: list_string
-          field_storage_settings:
-            allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
-          field_widget: options_select
-          default_value:
-            -
-              value: light
-          expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
+              uri: /node/2
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
         padding:
           required: false
           field_type: list_string
@@ -182,9 +230,21 @@ versioned_properties:
           derived_schema_metadata: {  }
     fallback_metadata:
       slot_definitions: {  }
-  306d97bd4098200d:
+  dab53791b9e9cf36:
     settings:
       prop_field_definitions:
+        eyebrow:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Who we are'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
         heading:
           required: true
           field_type: string
@@ -193,7 +253,7 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'Build faster with Jarvis'
+              value: 'Faithful to Scripture. Growing together in Christ.'
           expression: ℹ︎string␟value
           derived_schema_metadata:
             string_shape: {  }
@@ -207,7 +267,7 @@ versioned_properties:
           default_value: null
           expression: ℹ︎list_string␟value
           derived_schema_metadata: {  }
-        subheading:
+        text:
           required: false
           field_type: string
           field_storage_settings: {  }
@@ -215,11 +275,21 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'A component-driven Drupal theme for Canvas and Layout Builder.'
+              value: 'We are a multigenerational Baptist church seeking to glorify God through biblical worship, faithful teaching, caring relationships, and gospel witness.'
           expression: ℹ︎string␟value
           derived_schema_metadata:
             string_shape: {  }
-        cta_text:
+        row1_icon:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        row1_text:
           required: false
           field_type: string
           field_storage_settings: {  }
@@ -227,11 +297,67 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'Get started'
+              value: "God's Word shapes what we believe and how we live."
           expression: ℹ︎string␟value
           derived_schema_metadata:
             string_shape: {  }
-        cta_href:
+        row2_icon:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        row2_text:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'The gospel of Jesus Christ is our hope and message.'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        row3_icon:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        row3_text:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'The local church is a family where believers grow and serve.'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        button_text:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'What We Believe'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        button_href:
           required: false
           field_type: link
           field_storage_settings: {  }
@@ -247,55 +373,34 @@ versioned_properties:
           derived_schema_metadata:
             string_shape:
               format: uri-reference
-        image:
+        link_text:
           required: false
-          field_type: entity_reference
-          field_storage_settings:
-            target_type: media
-          field_instance_settings:
-            handler: 'default:media'
-            handler_settings:
-              target_bundles:
-                jarvis_image: jarvis_image
-          field_widget: media_library_widget
-          default_value: {  }
-          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:jarvis_image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
-          derived_schema_metadata: {  }
-        overlay:
-          required: false
-          field_type: integer
+          field_type: string
           field_storage_settings: {  }
           field_instance_settings: {  }
-          field_widget: number
+          field_widget: string_textfield
           default_value:
             -
-              value: 40
-          expression: ℹ︎integer␟value
-          derived_schema_metadata: {  }
-        align:
+              value: 'Meet Our Church'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        link_href:
           required: false
-          field_type: list_string
-          field_storage_settings:
-            allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
-          field_widget: options_select
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
           default_value:
             -
-              value: center
-          expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
-        text_color:
-          required: false
-          field_type: list_string
-          field_storage_settings:
-            allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
-          field_widget: options_select
-          default_value:
-            -
-              value: light
-          expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
+              uri: /node/2
+              options: {  }
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
         padding:
           required: false
           field_type: list_string
@@ -347,9 +452,9 @@ versioned_properties:
           derived_schema_metadata: {  }
     fallback_metadata:
       slot_definitions: {  }
-label: Hero
-id: sdc.jarvis.hero
+label: 'Large Call to Action'
+id: sdc.jarvis.large-call-to-action
 provider: jarvis
 source: sdc
-source_local_id: 'jarvis:hero'
+source_local_id: 'jarvis:large-call-to-action'
 

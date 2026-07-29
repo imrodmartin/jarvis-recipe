@@ -19,9 +19,6 @@ default:
   name:
     -
       value: jarvis-banner.png
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
       langcode: en
