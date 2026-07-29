@@ -6,7 +6,7 @@
     "homepage": "https://github.com/imrodmartin/jarvis-bootstrap-recipe",
     "require": {
         "php": ">=8.3",
-        "drupal/jarvis": "^1.0",
+        "drupal/jarvis": "^2.1",
         "imrodmartin/jarvis-modules": "^1.0",
         "drupal/ai": "^1.4",
         "drupal/ai_agents": "^1.3",
