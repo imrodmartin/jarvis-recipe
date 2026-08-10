@@ -2,17 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.image
-    - field.storage.block_content.field_media_image
+    - field.storage.media.field_media_image
+    - media.type.image
   module:
     - image
-id: block_content.image.field_media_image
+  enforced:
+    module:
+      - media
+id: media.image.field_media_image
 field_name: field_media_image
-entity_type: block_content
+entity_type: media
 bundle: image
 label: Image
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -20,7 +23,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg webp avif'
+  file_extensions: 'png gif jpg jpeg webp'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''

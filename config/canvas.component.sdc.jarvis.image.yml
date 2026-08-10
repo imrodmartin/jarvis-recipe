@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.jarvis_image.field_media_image
+    - field.field.media.image.field_media_image
     - image.style.canvas_parametrized_width
-    - media.type.jarvis_image
+    - media.type.image
   module:
     - file
     - media
@@ -12,7 +12,9 @@ dependencies:
     - options
   theme:
     - jarvis
-active_version: 65afb59a337299ea
+_core:
+  default_config_hash: QTlf5WcCAR8JLk2sNVoBKhwjYg_Y_dQSkZOhibZTaMg
+active_version: 753d37868a34a78b
 versioned_properties:
   active:
     settings:
@@ -26,10 +28,10 @@ versioned_properties:
             handler: 'default:media'
             handler_settings:
               target_bundles:
-                jarvis_image: jarvis_image
+                image: image
           field_widget: media_library_widget
           default_value: {  }
-          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:jarvis_image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
           derived_schema_metadata: {  }
         image_style:
           required: false
@@ -41,16 +43,6 @@ versioned_properties:
           default_value: null
           expression: ℹ︎list_string␟value
           derived_schema_metadata: {  }
-        image_uri:
-          required: false
-          field_type: string
-          field_storage_settings: {  }
-          field_instance_settings: {  }
-          field_widget: string_textfield
-          default_value: null
-          expression: ℹ︎string␟value
-          derived_schema_metadata:
-            string_shape: {  }
         caption:
           required: false
           field_type: string
@@ -155,3 +147,4 @@ id: sdc.jarvis.image
 provider: jarvis
 source: sdc
 source_local_id: 'jarvis:image'
+

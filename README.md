@@ -14,10 +14,10 @@ repository-root README for the quick start.
   settings (colours, fonts, sizes, logo). Claro becomes the admin theme and
   content is edited in it, like the standard profile.
 - **Canvas, fully wired**: canvas + canvas_field_component, component config
-  for the theme's 16 SDCs and the block/views components the library folders
-  use, content templates for the three content types, page regions, 5
-  reusable patterns, and the custom `jarvis_blocks` + `jarvis_canvas` glue
-  modules. Component folders are organised by `jarvis_canvas` on every cache
+  for the theme's 21 SDCs and the block/views components the library folders
+  use, content templates for the two content types, page regions, 5
+  reusable patterns, and the custom `jarvis_canvas` glue
+  module. Component folders are organised by `jarvis_canvas` on every cache
   rebuild (they cannot ship as config — Canvas auto-creates folders during
   component sync and an item may only live in one folder).
 - **Content types**: Blog and Basic only. There is deliberately no `landing_page`
@@ -26,7 +26,7 @@ repository-root README for the quick start.
   job. Both types carry a `field_meta_tags` (Meta tags) field, so an editor can
   override title/description/OG tags per node; anything left blank falls through
   to the site-wide metatag defaults the recipe already imports.
-- **Media types**: `jarvis_image` (local image) and `jarvis_video`
+- **Media types**: `image` (local image) and `remote_video`
   (remote/oEmbed), plus core's stock **Document** (`document`, `file` source)
   and **Video** (`video`, `video_file` source) — byte-identical to the standard
   profile's, so a standard-profile site keeps its own. The local Video type is
@@ -54,7 +54,7 @@ repository-root README for the quick start.
 - **Imports demo content** (core Default Content format, shipped in
   `content/`): 7 nodes (Home, About, Accessibility Statement, 4 blog posts),
   **2 Canvas pages** (the component showcase and a Test
-  Page), 7 block_content entities, the referenced media + files, and the
+  Page), 3 block_content entities, the referenced media + files, and the
   main-menu links. Node URL aliases are carried inline, so they attach
   regardless of imported node IDs. The front page is the Canvas component
   showcase (`/page/2`).
@@ -88,7 +88,7 @@ Without ddev (drush run from the project root), the path is just `recipes/jarvis
 > **Existing sites:** everything the recipe ships is namespaced away from the
 > standard profile's config — text formats are `jarvis_html`/`jarvis_full_html`
 > (Drupal's own Basic/Full HTML are untouched), the theme's own media types are
-> `jarvis_image`/`jarvis_video`,
+> `image`/`remote_video`,
 > the basic block type is `jarvis_basic`, the Linkit profile is `jarvis` — so
 > applying to a site created with the standard profile no longer collides with
 > or overwrites its formats, media types, or block types. The exceptions are
